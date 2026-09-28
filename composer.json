@@ -1,0 +1,21 @@
+{
+  "name": "upbot/dependencies",
+  "description": "Send a minimal Composer/npm dependency inventory to UpBot",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/upbot-eu/dependencies-php",
+  "support": {
+    "source": "https://github.com/upbot-eu/dependencies-php",
+    "issues": "https://github.com/upbot-eu/dependencies-php/issues"
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "composer-runtime-api": "^2.2",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": { "psr-4": { "Upbot\\Dependencies\\": "src/" } },
+  "bin": ["bin/upbot"],
+  "archive": { "exclude": ["/test", "/vendor", "/composer.lock"] }
+}
