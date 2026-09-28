@@ -6,7 +6,7 @@ PHP 8+ with cURL, Composer 2.2+. Framework-independent CLI. Reads `composer.lock
 and/or npm `package-lock.json` v1–v3. Uses `vlucas/phpdotenv` for dotenv parsing.
 Never executes project scripts, installs or updates packages.
 
-**Packagist publication is pending.** After publication:
+Install in the project:
 
 ```sh
 composer require upbot/dependencies
@@ -36,9 +36,6 @@ It refuses to overwrite existing files. Optional settings:
 # UPBOT_RELEASE=deploy-42
 # UPBOT_PRIVATE_PACKAGES=company/internal,@company/private
 ```
-
-Until publication, developers can use a Composer path repository pointing at this
-package with `"options": {"versions": {"upbot/dependencies": "0.1.0"}}`.
 
 `doctor` checks lockfiles, connection and token through `/v1/dependencies/verify`
 without changing inventory. `report` sends only package names, versions, ecosystem,

@@ -6,7 +6,7 @@ PHP 8+ s cURL, Composer 2.2+. CLI nezávisí od frameworku. Číta `composer.loc
 a/alebo npm `package-lock.json` v1–v3. Dotenv spracúva cez `vlucas/phpdotenv`.
 Nespúšťa skripty projektu ani neinštaluje a neaktualizuje balíky.
 
-**Balík zatiaľ nie je publikovaný v Packagiste.** Po publikovaní:
+Inštalácia v projekte:
 
 ```sh
 composer require upbot/dependencies
@@ -36,9 +36,6 @@ Existujúci súbor neprepíše. Ďalšie voliteľné nastavenia:
 # UPBOT_RELEASE=deploy-42
 # UPBOT_PRIVATE_PACKAGES=company/internal,@company/private
 ```
-
-Pred publikovaním môžu vývojári použiť Composer path repository s cestou k tomuto
-balíku a `"options": {"versions": {"upbot/dependencies": "0.1.0"}}`.
 
 ## Overenie a konfigurácia
 

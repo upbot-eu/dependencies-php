@@ -7,7 +7,7 @@ PHP 8+ mit cURL, Composer 2.2+. Frameworkunabhängiger CLI-Client. Liest
 `vlucas/phpdotenv` verwendet. Führt keine Projektskripte aus und installiert
 oder aktualisiert keine Pakete.
 
-**Die Veröffentlichung auf Packagist steht noch aus.** Danach:
+Im Projekt installieren:
 
 ```sh
 composer require upbot/dependencies
@@ -38,9 +38,6 @@ Vorhandene Dateien werden nicht überschrieben. Weitere optionale Einstellungen:
 # UPBOT_RELEASE=deploy-42
 # UPBOT_PRIVATE_PACKAGES=company/internal,@company/private
 ```
-
-Bis zur Veröffentlichung können Entwickler ein Composer-Path-Repository für
-dieses Paket mit `"options": {"versions": {"upbot/dependencies": "0.1.0"}}` verwenden.
 
 ## Prüfung und Konfiguration
 
